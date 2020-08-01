@@ -1,4 +1,4 @@
-# Presentations E health MAKAUT 
+# Presentations E-Health-MAKAUT 
 This repo will preserve my presentation for the MAKAUT E-Health 
 It contains 
 - .ipynb presentation 
