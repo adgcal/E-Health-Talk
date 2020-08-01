@@ -1,0 +1,224 @@
+---
+title: "Tutorial"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("Demo-press the submit answer2+2=?",
+    answer(" 5"),
+    answer("2"),
+    answer("3"),
+    answer("4", correct = TRUE)
+  ),
+  
+  question("What is the catalyst that created the need of electronic health records (EHRs)?",
+    answer(" Improvement of the health insurance industry."),
+    answer("Improvement of patient medical care"),
+    answer("Improvement of the workplace for healthcare professionals"),
+    answer("The advancement of computer technology.", correct = TRUE)
+  ),
+
+question("Which of the  following E-health term is most trendy",
+    answer("Health Informatics"),
+    answer("Telemedicine", correct = TRUE),
+    answer("MHealth"),
+    answer("Evidence Based Medicine")
+  ),
+
+
+question("Among the covid epidemic models proposed by ICMR, CDDEP-John Hopkins, Cambridge University and Univesity of Michigan,the one that is proposed by the CDDEP is based on ",
+answer("Agent based models (ABM)",correct=TRUE),
+answer("SIR"),
+answer("SEIR"),
+answer("extended SIR")
+),
+
+
+question(" The singularity that is beyond Moore's law is known as",
+    answer("Hawkins Limit"),
+    answer("Penrose Limit"),
+    answer("Chandrasekhar limit"),
+    answer("Kurzweil limit", correct = TRUE)
+  ),
+
+question("In SIR model the rate of change of susceptible population is ",
+    answer("negative and product of susceptible and infected population",correct=TRUE),
+    answer("positive and product of susceptible and infected population"),
+    answer("Depends on recovered population "),
+    answer("is independent of total population N")
+  ),
+
+
+question("Which of the  following  dynamically resembles Moore's law that states that the number of transistors in  dense integrated circuit doubles about every two years.",
+    answer("Saturation Enzyme Kinetics"),
+    answer("Logistic Growth equation"),
+    answer("Decay of capacitance"),
+    answer("Early Evolution", correct = TRUE)
+  ),
+
+
+question("The original  Penrose Hawkins debate AI is on  ",
+    answer("Superiority of Brain over computer", correct = TRUE),
+answer("Superiority of biological evolution over cosmological evolution"),
+answer("On far from equilibrium processes as compared to linear equilibrium processes"),
+answer("On superiority of AI-Doctors over doctors")
+  ),
+
+
+question("ABM (agent based models) and SDM (systems dynamics modeling) are  implemented where,",
+    answer("Personalized medicine will fall into ABM and SDM or reflects the aggregated behavior", correct = TRUE),
+    answer("CAS or complex adaptive systems fail"),
+    answer("both are extensions of discrete dynamic systems"),
+    answer("epidemological models fail")
+  ),
+
+
+question("Which of the following principle(s) is/are part of a patient-centered style of health communication?",
+answer("exploring both disease and experience"),
+answer("understanding the whole experience"),
+answer("incorporating prevention and health promotion"),
+answer("all of these",correct=TRUE)
+),
+
+question("Which one of the following statements is TRUE in a complex emergency in a low-income country", 
+answer("user fees do not have a negative impact on equity"), 
+answer("the coverage of health insurance is limited",correct=TRUE),  
+answer("private health spending represents an insignificant proportion of total spending."), 
+answer("government spending is redirected to capital expenditure.")
+),
+
+question("Which of the following is a general term used to refer to the application of digital information and communication technology to health care?",
+answer("digital health"),
+answer("e-health",correct=TRUE),
+answer("i-health"),
+answer("tech-health")
+),
+
+question("The use of mobile and wireless applications (e.g., SMS, apps, wearable devices, remote sensing and use of social media, such as Facebook, Twitter and Instagram) to health-related purposes describes",
+answer("e-health"),
+answer("i-health"),
+answer("s-health"),
+answer("m-health",correct=TRUE)
+),
+
+question("Which of the following refers to a programme that aims to enable patients to make better use of information and communication technology for health and health care?",
+answer("patient informatics",correct=TRUE),
+answer("ICT health"),
+answer("health-tech"),
+answer("none of these")
+),
+
+question("What is the catalyst that created the need for electronic health records (EHRs)?",
+answer("Improvement of the health insurance industry"),
+answer("Improvement of patient medical care"),
+answer("Improvement of the workplace for healthcare professionals"),
+answer("The advancement of computer technology",correct=TRUE)
+),
+
+question("Health Ministry notified the Telemedicine Guidelines laying down norms for an industry that has so far operated in a regulatory grey area. The notifications happened during  ",
+    answer("Last Budget"),
+    answer("Just after 2013 election"),
+    answer("When the doctors went on strike"),
+    answer("Post COVID", correct = TRUE)
+  ),
+
+question("ICT in e-Health is",
+answer("Institute of Cardiovascular Treatment"),
+answer("Intelligent Communication Technology"), 
+answer("Information Collection Technology"),
+answer("Information and Communication Technology",correct=TRUE) 
+),
+
+
+question("Which of the following health communication style makes use of the patient's knowledge and experience?",
+answer("doctor-centred communication"),
+answer("patient-centred communication",correct=TRUE),
+answer("practitioner-centred communication"),
+answer("none of these")
+
+),
+
+question("Who lies at the center of Digital Health ?",
+answer("Doctor"),
+answer("Technology"),
+answer("Patient",correct=TRUE),
+answer("Data Scientist")
+
+),
+
+question("Which domain of the eHealth model best fits the following eHealth example? An app to monitor calorie intake and energy levels ?",
+
+answer("Health in your hands",correct=TRUE),
+answer("Data and the qualified self"),
+answer("Interacting with health professionals"),
+answer("None of the above")
+
+),
+
+question("Which of the following does not currently present a significant health challenge in low-income countries?",
+answer("HIV/AIDS"),
+answer("Malaria"),
+answer("Cardiovascular disease",correct=TRUE),
+answer("Diarrhoeal diseases")
+),
+
+question("Can public health prevent disease for individuals ?",
+answer("Always",correct=TRUE),
+answer("Sometimes"),
+answer("Rarely"),
+answer("Never")
+
+),
+
+question("For a pandemic like Novel Coronavirus, we should focus on behavior change of the people. Which is the best way to achieve it ?",
+answer("By asking them"),
+answer("Public Health Intervention",correct=TRUE),
+answer("Coercion"),
+answer("All of the above")
+),
+
+question("Which of the following studies determine prevalence of diseases?",
+answer("Longitudinal study"),
+answer("Case control study"),
+answer("Cohort study"),
+answer("Cross sectional study",correct=TRUE)
+),
+
+question("Burden of disease is measured by",
+answer("Disability Adjusted life years(DALY)"),
+answer("Physical Quality of life years (PQLY)"),
+answer("Health Adjusted Life Years (HALE)"),
+answer("All of the above",correct=TRUE)
+
+),
+
+question("CDM denotes" ,
+answer("Clean Development Mechanism",correct=TRUE),
+answer("Community Development Mechanism"),
+answer("Clear Development Model"),
+answer("Community Development Model")
+
+),
+question("Constant presence of disease in an area during a period of time is: ",
+answer("endemic",correct=TRUE),
+answer("epidemic"),
+answer("sporadic"),
+answer("pandemic")
+)
+)
+
+```
+

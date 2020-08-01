@@ -1,0 +1,530 @@
+---
+title: " A Conducted Data Tour in the Health Domain "
+author: "Anjan Kr. Dasgupta adgcal@gmail.com"
+date: June 2020
+header-includes:
+  - \DeclareUnicodeCharacter{2212}{-}
+  - \usepackage{enumerate}
+  - \usepackage{physics}
+  - \usepackage{latexsym}
+  - \usepackage{amssymb}
+  - \usepackage{amsmath}
+  - \usepackage{float}
+output:
+  beamer_presentation:
+    colortheme: "beaver"
+    fonttheme: structurebold
+    theme: "Goettingen"
+  bibliography: qbiol.bib
+  link-citations: yes
+  ioslides_presentation: default
+  slidy_presentation: default
+  slide_level: 3
+  pdf_document: default
+---
+  
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# The future in a post-Coronavirus world
+
+- The value of open innovation to solve a crisis
+- Unexpected lessons from an unprecedented crisis
+- How do we keep innovation projects going over distance and through a crisis?
+- The future of healthcare and medical tech
+
+# How to rearchitect?
+- How can health rearchitect themselves to be more crisis-proof?
+- How will medical care approach risk as the pandemic settles down?
+- Smart biomedical investment strategies during the Coronavirus pandemic
+- What priorities must change, and what must stay the same.
+
+# E-Words on or before 1999
+- e-Commerce
+- e-Business
+- e-Solutions
+
+# E-Words after 2000
+- e-Health 
+- e-Agriculture 
+- e-Environment
+
+# Components of e-health 
+
+- Telemedicine 
+- Health Informatics 
+- MHealth
+- Evidence Based Medicine 
+
+# Telemedicine
+- Capture readings from medical devices at a faraway location. 
+- Using telemedicine software, patients can see a doctor for diagnosis and treatment without having to wait for an appointment. 
+- Patients can consult a physician at the comfort of their home
+- <https://www.healthline.com/health/best-telemedicine-companies>
+
+# Telemedicine Companies
+
+- US based 
+    - Teladoc, MeMD, iCliniq Amwell,PlushCare,HealthTap, Takeaway 
+- India based 
+    - https://vhealth.io
+
+# Health Informatics 
+
+Health informatics  uses ICT to organize and analyze health records to improve healthcare outcomes.  
+\tiny
+- <https://www.iihmrdelhi.edu.in/health-information-technology?gclid=CjwKCAjw8pH3BRAXEiwA1pvMsT10OtbAhawHxXu9ZLMGp2QFddVlIP9Bmm8xl4Ienzt0kBfRhAGpUxoCN1QQAvD_BwE>
+
+
+# MHealth (mobile health)
+
+- Refers to use of mobile communication devices, such as mobile phones,personal digital assistants (PDAs), and wearable devices such as smart watches, for health services.
+- <https://equityhealthj.biomedcentral.com/articles/10.1186/s12939-020-01175-7>
+
+
+# Evidence Based Medicine 
+- Evidence based medicine (EBM)  uses current DATA SCIENCE based approaches in decisions making particularly in the care of individual patients. 
+- EBM integrates clinical experience and patient values with the best available research information.
+- <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3789163/#:~:text=Evidence%20based%20medicine%20(EBM)%20is,the%20best%20available%20research%20information.>
+
+
+
+
+
+# Trends Inspection
+```{r}
+library(gtrendsR)
+tr <- gtrends("covid",geo="",time="2020-01-01 2020-07-01")
+plot(tr)
+summary(tr)
+```
+
+#  Competeing synonmns
+
+![Comparative Synonymns- A sudden peak appears during the COVID 19 outbreak](./image/000001.png)
+
+
+
+
+# A complimentary trend 
+![Data Scientsists engaged in modelling COVID? Lock Down Syndrome!](./image/000002.png)
+
+
+
+
+# The e-health equation 
+
+- EH=e-health
+- ICT= Information & Communication Technology(ICT)
+- DS = Data Science 
+
+\begin{equation}
+EH = ICT \bigcup DS 
+\end{equation}
+
+
+# Moore's law in health care 
+https://thehealthcareblog.com/blog/2014/04/23/moores-law-in-healthcare-three-predictio/
+
+
+- Moore's Law states that the number of transistors on a microchip doubles about every two years, though the cost of computers is halved. 
+- Kurzweil said, “The year 2029 is the consistent date I’ve predicted, when an artificial intelligence will pass a valid Turing test  — achieving human levels of intelligence." 
+
+# Newton’s First Law applied to manufacturing and society
+- Some things continue to advance, and that’s the fact until ( unless it is hit by something like CVD)
+![](./image/moore.png)
+
+
+
+# Systems Dynamics Modelling (SDM)  and Agent based Models (ABM)
+
+- <https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-019-4627-7>
+
+
+# SDM ADM details
+- SDM simulates the movement of entities in a system (aggregate behaviour)
+    - can be interpreted as mimicking the flow of water in and out of a bath tub. 
+    - how much ‘water’ (some resource) can leave or enter a ‘bath tub’ (a stock) as a function of  environmental or operational) constrains
+- ABM is a ground-up representation of a system, simulating the changing states of individual ‘agents’ in a system.
+
+#  Why use SDM and ABM to model health systems?
+
+- ABM is well-suited to explore systems with dynamic patient or health worker activity, a limitation of other differential equation or event-based simulation tools 
+- SDM is best implemented where the aim of the simulation is to examine aggregate flows, trends and sub-system behaviour as opposed to intricate individual flows of activity
+
+
+
+# Can AI ever beat the doctors ?
+
+- <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6691444/>
+- Must refer to Penrose Hawkins debate 
+## Penrose, R. (1989). The emperor's new mind: Concerning computers, minds, and the laws of physics. Oxford University Press.
+
+###  Roger Penrose
+\small
+- Eminent physicist and winner, with Stephen Hawking, of the prestigious Wolf Prize—puts forward his view that **there are some facets of human thinking that can never be emulated by a machine**.
+- Late Hawkins had the opposite  view. 
+
+
+# Data Data Everywhere not a drop to analyze 
+
+## ICMR DataBase 
+
+**National Centre for Disease Informatics and Research**
+
+![Intended data bases](./image/000003.png)
+
+ 
+# Low volume of available data 
+ 
+![Low Volume records+AcessibilityIssues](./image/my_health_record.png)
+
+
+# Life Cycle of Health Data 
+
+![](./image/data_def.png){width=50%}
+
+ 
+# Parash Pathar (Touch Stone)
+
+![Guess the Native Dialogue](./image/sray.png)
+
+# The least e-Health can do - A quote from Nick Dawson
+
+"Aravind Eye Hospital in India does more eye surgeries than any other place in the world. It treats nearly 2 million patients a year, for remarkably less than most hospitals in the United States, and it treats nearly two-thirds of those patients for free. If my Yelp app on my iPhone tells me FedEx can get raw fish to Aspen, we can surely get the blind to India."-ND
+
+
+# Pulling the COVID data
+```{r,echo=FALSE}
+#library(COVID19)
+#x<-covid19()
+# plot( x$tests[x$tests>1E7],x$confirmed[x$tests>1E7],xlab="Number of Tests",type="b",pch=19,lty=1,col='red',ylab="Y")
+# points( x$tests[x$tests>1E7],x$recovered[x$tests>1E7],xlab="Number of Tests ",type="b",pch=19,lty=2,col='blue')
+# legend("topleft", legend = c("Confirmed", "Recovered"),col = c("red", "blue"), lty = 1:2, cex = 0.8)
+
+
+```
+
+# A queer looking output 
+
+![Ouput of the commented R code](./image/000004.jpeg)
+
+# Irreversible Bistability
+Irreversible Bistability
+Posted on March 17, 2013 by Hsauro in 
+**Analogue Machines - Cell Networks and Computation**
+
+
+![Here we see the state of the system (vertical axis) plotted as a function of a parameter in the system](./image/irrev_bistbl.png)
+
+
+
+# A delay 
+![Rcovery process](./image/000005.jpeg)
+
+
+# A Cumulative picture
+
+![](./image/000006.jpeg)
+
+
+# The policy change effect 
+
+![](./image/mypolicy.png)
+
+
+# SIR Model 
+A simple mathematical description of the spread of a disease in a population is the so-called *SIR model*. (Kermack and McKendrick ,**Proc. R. Soc. A, 115, 772 1927**)
+
+# The story behind the SIR model
+A simple mathematical description of the spread of a disease in a population is the so-called *SIR model*, ime t.
+- S(t) are those susceptible but not yet infected with the disease;
+- I(t) is the number of infectious individuals;
+- R(t) are those individuals who have recovered from the disease and now have immunity to it.
+
+
+# Equations
+\begin{align}
+  \frac{dS}{dt}= −\beta \cdot S\cdot I /N  \\
+ \frac{dI}{dt}=\beta \cdot S\cdot I /N  −\gamma I \\
+  \frac{dR}{dt}= \gamma I
+ \end{align}
+
+
+# Running Python as  Markdown chunk
+```{r}
+library(reticulate)
+
+```
+
+# Importing python libraries 
+```{python}
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+```
+
+# Initialization 
+```{python}
+# Total population, N.
+N = 1000
+# Initial number of infected and recovered individuals, I0 and R0.
+I0, R0 = 1, 0
+# Everyone else, S0, is susceptible to infection initially.
+S0 = N - I0 - R0
+# Contact rate, beta, and mean recovery rate, gamma, (in 1/days).
+beta, gamma = 0.8, 3./10 
+t = np.linspace(0, 40, 160)
+```
+
+# The model in python 
+```{python}
+def deriv(y, t, N, beta, gamma):
+    S, I, R = y
+    dSdt = -beta * S * I / N
+    dIdt = beta * S * I / N - gamma * I
+    dRdt = gamma * I
+    return dSdt, dIdt, dRdt
+```
+
+
+# Simulating the SIR model 
+```{python}
+y0 = S0, I0, R0
+# Integrate the SIR equations over the time grid, t.
+ret = odeint(deriv, y0, t, args=(N, beta, gamma))
+S, I, R = ret.T
+```
+
+# Ploting the model variables against TIME (AU)
+```{python}
+plt.figure(figsize=(6,2))
+plt.plot(t,S/1000,'or',label='Sucep')
+plt.plot(t,I/1000,'sg',label='Infec')
+plt.plot(t,(1000-S-I)/1000,'<b',label='Recov')
+plt.legend(bbox_to_anchor=(0.65, 0.75),\
+  loc='upper left', borderaxespad=0.)
+```
+
+
+# Sympy 
+
+
+The analytical expression for Jacobian of the SIR model assumes 
+
+$$\left[\begin{matrix}- \frac{I \beta}{N} & - \frac{S \beta}{N}\\\frac{I \beta}{N} & \gamma + \frac{S \beta}{N}\end{matrix}\right]$$
+
+# The steady stae of the SIR 
+
+\tiny
+s_S = sympy.Eq(dSdt, 0)
+s_I = sympy.Eq(dIdt, 0)
+s_R = sympy.Eq(dRdt, 0)
+
+s_S_sol = sympy.solve(s_S, S)
+s_I_sol = sympy.solve(s_I,I)
+s_R_sol = sympy.solve(s_R,R)
+
+print('The steady state solution for the different populations  are:')
+s_S_sol,s_I_sol,s_R_sol
+
+The steady state solution for the different populations  are:0,0. This actually implies S=S(ss),I=I(ss)
+
+
+
+
+# Extended SIR Model 
+It may be noted that though  SIR model model is simplistic the pattern remains similar for complicated cases (Multi-city modeling of epidemics using spatial networks: Application to 2019-nCov (COVID-19) coronavirus in India< https://doi.org/10.1101/2020.03.13.20035386>)
+![](./image/SIR_ext.png)
+
+# Output of the connected model 
+![](./image/many_infec.png)
+
+
+
+
+
+# The SEIR Story 
+Many diseases have a latent phase during which the individual is infected but not yet infectious. This delay between the acquisition of infection and the infectious state can be incorporated within the SIR model by adding a latent/exposed population, E, and letting infected (but not yet infectious) individuals move from S to E and from E to I. 
+
+# SEIR without vital dynamics
+In a closed population with no births or deaths, the SEIR model becomes:
+
+\begin{align}
+\frac{dS}{dt} & = -\frac{\beta SI}{N}\\
+\frac{dE}{dt} & = \frac{\beta SI}{N} - \sigma E\\
+\frac{dI}{dt} & = \sigma E - \gamma I\\
+\frac{dR}{dt} & = \gamma I
+\end{align}
+
+where N = S + E + I + R is the total population.
+
+# Numerical Simulation to the SEIR model
+
+![](./image/seir.png)
+
+
+# Analytical Solution to the SEIR model 
+The steady state solution for the different populations  are:
+
+$$\left ( \left [ \frac{N \left(N \mu + R \zeta\right)}{I \beta + N \nu}\right ], \quad \left [ \frac{I S \beta}{N \left(\nu + \sigma\right)}\right ], \quad \left [ \frac{E \sigma}{\gamma + \nu}\right ], \quad \left [ \frac{I \gamma}{\nu + \zeta}\right ]\right )$$
+- Point to note : excepting for S , no dependence  on N.
+
+# Implications of the SEIR
+
+- Longer latency period will result in slower initial growth of the outbreak.
+- However, since the model does not include mortality, the basic reproductive number, $R0 = \beta/\gamma$, does not change.
+
+- After the initial fast growth, the epidemic depletes the susceptible population. 
+-  Eventually the virus cannot find enough new susceptible people and dies out.
+- Introducing the incubation period does not change the cumulative number of infected individuals.
+
+# Jacobian of the SEIR 
+$$\left[\begin{matrix}- \frac{I \beta}{N} - \nu & 0 & - \frac{S \beta}{N} & \zeta\\\frac{I \beta}{N} & - \nu - \sigma & \frac{S \beta}{N} & 0\\0 & \sigma & - \gamma - \nu & 0\\0 & 0 & \gamma & - \nu - \zeta\end{matrix}\right]$$
+
+
+# Other Models (SIR & SEIR type - E=EXPOSED)
+\begin{itemize}[<+->]
+\item The first is a model developed by scientists at the Indian Council of Medical Research (ICMR) and their collaborators. *ICMR study=SEIR*.
+\item The second is a model produced by a group of epidemiologists and statisticians largely from the University of Michigan. *Michigan study=SIR*.
+\item The third is a set of reports published by the Centre for Disease Dynamics, Economics and Policy *(CDDEP)  Hopkins study=ABM=Data driven*.
+\item Finally, there is a recent study from scientists at Cambridge University *Cambridge study=SIR*.
+\end{itemize}
+
+# Fitzhugh-Nagumo model: an excitable system
+The Fitzhugh-Nagumo model of an excitable system is a two-dimensional simplification of the Hodgkin-Huxley model of spike generation in squid giant axons.
+\begin{align}
+\frac{dv}{dt}=v−v^3−w+I_{ext}\\
+\tau \frac{dw}{dt}=v−a−bw
+\end{align}
+
+
+# Isocline plot 
+def plot_isocline(ax, a, b, tau, I, color='k', style='--', opacity=.5, vmin=-1,vmax=1):
+    """Plot the null iscolines of the Fitzhugh nagumo system"""
+    v = np.linspace(vmin,vmax,100)
+    ax.plot(v, v - v**3 + I, style, color=color, alpha=opacity)
+    ax.plot(v, (v - a)/b, style, color=color, alpha=opacity)
+
+# The output
+
+![](./image/nagumo.png)
+
+
+
+
+# Digitization of ECG Signal  
+- <sub>Researchers want to analyze the actual value of signals, i.e., the value of this ECG signal in milivolts. </sub>
+- <sub>But to process information using computers, they must collect the signals via some capturing device which discretely samples, and digitizes the signals into $2^N$ levels, where N is the resolution of the device. </sub>
+- <sub> Each sample captured requires N bits to store, and takes one of 2^N possible integer values. - There is also information stored which allows the user/program to map these integers back to the physical values the device managed to capture given its resolution. </sub>
+- <sub>For example if they have a 12 bit oscilloscope, they have 4096 levels to capture the range and details of the signal.</sub>
+- <sub>A higher N allows us to resolve finer details, but requires more storage space per sample.</sub>
+
+
+# PhysioNet 
+- For e-health  this is what NCBI is to *Bioinformatics*.This is supported by the **National Institute of General Medical Sciences (NIGMS) and the National Institute of Biomedical Imaging and Bioengineering (NIBIB)** under NIH grant number 2R01GM104987-09.
+- The following site provides deeper insights into the data format used in physionet
+
+<http://archive.physionet.org/faq.shtml#physiobank-formats>
+
+# Overview of Physionet 
+- <sub> Clinical Databases: Data from critical care clinical settings </sub>
+- <sub>Waveform Databases: High resolution continuous recordings of physiological signals</sub>
+- <sub>Waveform databases are organized according to their signal and annotation types.</sub>
+- <sub>Multi-Parameter Databases: Available signals vary, but may include ECG, continuous invasive blood pressure, respiration, oxygen saturation, and EEG, among others.</sub>
+
+
+- Physionet provides the **WFDB software package** highly useful for reading, writing, and processing the above described WFDB files.
+- The popular WFDB platforms are MATLAB & PYTHON
+
+# MIT Format
+- <sub>MIT Signal files **(.dat)** are binary files containing samples of digitized signals. These store the waveforms, but they cannot be interpreted properly without their corresponding header files.</sub>
+- <sub> MIT Header files **(.hea)** are short text files that describe the contents of associated signal files.</sub>
+- <sub> Annotation files **(.atr)** . Thr filr record.dat may be accompanied with RECORDNAME.atr.</sub>
+
+
+
+# European Data Format (EDF)
+- <sub>EDF files contain digital signals stored in their standard international format.</sub>
+-  <sub>EDF files store their header information at the beginning of the file, as opposed to MIT format which has a separate header file.</sub>
+-  <sub>EDF is a WFDB and PhysioBank-compatible format. </sub>
+-  <sub>If a directory contains RECORDNAME.edf and RECORDNAME.edf.qrs, the .qrs file is the annotation file associated with the record.</sub>
+
+
+# A visit 
+
+<https://physionet.org/lightwave/?db=mitdb/1.0.0>
+
+# ECG digitization - A success story 
+
+![](./image/pacemaker_model.png)
+
+# All may not be well for AI 
+![](./image/pacemaker0.png)
+
+# From heart to cybersecurity 
+
+![](./image/pacemaker_attack.png)
+
+# Can AI ever beat the doctors ?
+- <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6691444/>
+- <https://interestingengineering.com/these-7-ai-powered-doctor-phone-apps-could-be-the-future-of-healthcare>
+
+
+# Data Silos 
+
+- A data silo is a collection of information in an organization that is isolated from and not accessible by other parts of the organization. 
+- Removing data silos can help you get the right information at the right time so you can make good decisions.
+- And, you can save money by reducing storage costs for duplicate information.
+
+
+# About healthcare today, we talk about the silos a lot
+- Very rarely does infrastructure technology create the hype that blockchain currently has
+- The challenges that blockchain addresses in healthcare are very disruptive
+
+# Block Chain in Healthcare  
+
+- Synaptic Health Alliance=Optum+Humana+MultiPlan+Quest 
+- Aetna+ Ascension
+- Indian telemedicine https://vhealth.io/ by Aetna
+
+# Prophecy:Blockchain next dramatic innovation in Healthcare
+\small 
+- Multiple people looking at the same information
+- Quality of that information should go up 
+- Operational costs for the provider and payers lesser
+- should go down because there's less-frequent contact being done between those two stakeholders. 
+-blockchain allows us to connect those silos and … enable new capabilities (so that) access to information no longer is where we compete
+
+# # Potential benifits of Blockchain Technology in Healthcare
+
+![](./image/block0.png)
+
+# Advantages
+
+![](./image/block1.png)
+
+# Advantages 
+
+![](./image/block2.png)
+
+
+
+
+# An interactive Shiny Application
+<https://adgcal.shinyapps.io/covid/>
+
+# A quiz for all
+<https://adgcal.shinyapps.io/EH_mcq/>
+
+
+
+# Lastly 
+
+![](./image/thankyou.png)
+
+
+
